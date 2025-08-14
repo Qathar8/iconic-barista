@@ -3,15 +3,15 @@ import { Target, Users, Award, Coffee, Star, Zap, Heart, Trophy } from 'lucide-r
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-gradient-to-br from-white via-amber-50 to-slate-50">
+    <section id="about" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-white via-amber-50 to-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Enhanced section header */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-12 sm:mb-16 lg:mb-20">
           <div className="inline-flex items-center bg-gradient-to-r from-amber-500 to-amber-600 text-white px-8 py-3 rounded-full font-bold text-lg mb-6 shadow-xl animate-pulse">
             <Heart className="w-6 h-6 mr-2" />
             About Our Institute
           </div>
-          <h2 className="text-5xl md:text-6xl font-black text-slate-800 mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-slate-800 mb-4 sm:mb-6 px-4 sm:px-0">
             <span className="bg-gradient-to-r from-slate-800 to-amber-600 bg-clip-text text-transparent">
               Where Coffee Dreams
             </span>
@@ -20,57 +20,57 @@ const About = () => {
               Come True ✨
             </span>
           </h2>
-          <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-4 sm:px-0">
             🚀 Kenya's most prestigious destination for professional barista training, where passion meets expertise
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center mb-12 sm:mb-16 lg:mb-20">
           {/* Left content with stunning visuals */}
           <div className="relative">
             <div className="absolute -top-8 -left-8 w-32 h-32 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full blur-2xl opacity-30 animate-pulse"></div>
             <div className="absolute -bottom-8 -right-8 w-40 h-40 bg-gradient-to-br from-amber-500 to-amber-700 rounded-full blur-3xl opacity-20 animate-pulse delay-1000"></div>
             
-            <div className="relative bg-white rounded-3xl p-8 shadow-2xl border border-amber-100">
-              <div className="grid grid-cols-2 gap-6 mb-8">
+            <div className="relative bg-white rounded-3xl p-6 sm:p-8 shadow-2xl border border-amber-100 mx-4 sm:mx-0">
+              <div className="grid grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
                 <img 
                   src="https://images.pexels.com/photos/2074130/pexels-photo-2074130.jpeg?auto=compress&cs=tinysrgb&w=400" 
                   alt="Professional barista training"
-                  className="w-full h-32 object-cover rounded-2xl shadow-lg hover:scale-105 transition-transform duration-500"
+                  className="w-full h-24 sm:h-32 object-cover rounded-2xl shadow-lg hover:scale-105 transition-transform duration-500"
                 />
                 <img 
                   src="https://images.pexels.com/photos/1251175/pexels-photo-1251175.jpeg?auto=compress&cs=tinysrgb&w=400" 
                   alt="Latte art creation"
-                  className="w-full h-32 object-cover rounded-2xl shadow-lg hover:scale-105 transition-transform duration-500"
+                  className="w-full h-24 sm:h-32 object-cover rounded-2xl shadow-lg hover:scale-105 transition-transform duration-500"
                 />
               </div>
               
-              <h3 className="text-3xl font-bold text-slate-800 mb-6 flex items-center">
-                <Coffee className="w-8 h-8 text-amber-600 mr-3 animate-spin-slow" />
+              <h3 className="text-2xl sm:text-3xl font-bold text-slate-800 mb-4 sm:mb-6 flex items-center">
+                <Coffee className="w-6 h-6 sm:w-8 sm:h-8 text-amber-600 mr-3 animate-spin-slow" />
                 Our Mission
               </h3>
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+              <p className="text-base sm:text-lg text-gray-700 mb-4 sm:mb-6 leading-relaxed">
                 At Iconic Training Institute, we are dedicated to transforming coffee enthusiasts into 
                 <span className="text-amber-600 font-bold"> skilled professionals</span>. Our comprehensive training programs 
                 combine theoretical knowledge with hands-on experience, ensuring our graduates are well-prepared 
                 for successful careers in the thriving coffee industry.
               </p>
-              <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+              <p className="text-base sm:text-lg text-gray-700 mb-6 sm:mb-8 leading-relaxed">
                 Located in the heart of Nairobi at Biashara Plaza, we have been shaping the future of Kenya's 
                 coffee culture by providing <span className="text-amber-600 font-bold">world-class training</span> that 
                 meets international standards.
               </p>
               
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center p-6 bg-gradient-to-br from-amber-500 to-amber-600 rounded-2xl shadow-xl text-white transform hover:scale-105 transition-all duration-300">
-                  <div className="text-4xl font-black mb-2 animate-bounce">500+</div>
-                  <div className="font-semibold">Happy Graduates</div>
-                  <div className="text-sm opacity-90">Success Stories</div>
+              <div className="grid grid-cols-2 gap-4 sm:gap-6">
+                <div className="text-center p-4 sm:p-6 bg-gradient-to-br from-amber-500 to-amber-600 rounded-2xl shadow-xl text-white transform hover:scale-105 transition-all duration-300">
+                  <div className="text-2xl sm:text-3xl lg:text-4xl font-black mb-1 sm:mb-2 animate-bounce">500+</div>
+                  <div className="font-semibold text-sm sm:text-base">Happy Graduates</div>
+                  <div className="text-xs sm:text-sm opacity-90">Success Stories</div>
                 </div>
-                <div className="text-center p-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl shadow-xl text-white transform hover:scale-105 transition-all duration-300">
-                  <div className="text-4xl font-black mb-2 animate-bounce delay-500">5+</div>
-                  <div className="font-semibold">Years Experience</div>
-                  <div className="text-sm opacity-90">Industry Leading</div>
+                <div className="text-center p-4 sm:p-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl shadow-xl text-white transform hover:scale-105 transition-all duration-300">
+                  <div className="text-2xl sm:text-3xl lg:text-4xl font-black mb-1 sm:mb-2 animate-bounce delay-500">5+</div>
+                  <div className="font-semibold text-sm sm:text-base">Years Experience</div>
+                  <div className="text-xs sm:text-sm opacity-90">Industry Leading</div>
                 </div>
               </div>
             </div>
@@ -78,59 +78,59 @@ const About = () => {
 
           {/* Right content - Enhanced Why Choose Us */}
           <div className="relative">
-            <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-10 shadow-2xl text-white">
+            <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-6 sm:p-8 lg:p-10 shadow-2xl text-white mx-4 sm:mx-0">
               <div className="text-center mb-10">
-                <div className="inline-flex items-center bg-gradient-to-r from-amber-500 to-amber-600 px-6 py-3 rounded-full font-bold text-lg mb-4">
+                <div className="inline-flex items-center bg-gradient-to-r from-amber-500 to-amber-600 px-4 sm:px-6 py-2 sm:py-3 rounded-full font-bold text-base sm:text-lg mb-4">
                   <Trophy className="w-6 h-6 mr-2" />
                   Why Choose Us?
                 </div>
-                <h3 className="text-3xl font-bold">🌟 Excellence in Every Cup</h3>
+                <h3 className="text-2xl sm:text-3xl font-bold">🌟 Excellence in Every Cup</h3>
               </div>
               
-              <div className="space-y-8">
+              <div className="space-y-6 sm:space-y-8">
                 <div className="flex items-start space-x-6 group">
-                  <div className="bg-gradient-to-br from-amber-500 to-amber-600 p-4 rounded-2xl shadow-xl group-hover:scale-110 transition-transform">
-                    <Coffee className="w-8 h-8 text-white" />
+                  <div className="bg-gradient-to-br from-amber-500 to-amber-600 p-3 sm:p-4 rounded-2xl shadow-xl group-hover:scale-110 transition-transform flex-shrink-0">
+                    <Coffee className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-xl mb-3 text-amber-400">☕ Expert Instructors</h4>
-                    <p className="text-gray-300 leading-relaxed">
+                    <h4 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3 text-amber-400">☕ Expert Instructors</h4>
+                    <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
                       Learn from certified baristas with years of industry experience and international competition wins
                     </p>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-6 group">
-                  <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-4 rounded-2xl shadow-xl group-hover:scale-110 transition-transform">
-                    <Target className="w-8 h-8 text-white" />
+                  <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-3 sm:p-4 rounded-2xl shadow-xl group-hover:scale-110 transition-transform flex-shrink-0">
+                    <Target className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-xl mb-3 text-blue-400">🎯 Hands-On Training</h4>
-                    <p className="text-gray-300 leading-relaxed">
+                    <h4 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3 text-blue-400">🎯 Hands-On Training</h4>
+                    <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
                       Master your skills with professional-grade equipment in our state-of-the-art training facility
                     </p>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-6 group">
-                  <div className="bg-gradient-to-br from-green-500 to-green-600 p-4 rounded-2xl shadow-xl group-hover:scale-110 transition-transform">
-                    <Award className="w-8 h-8 text-white" />
+                  <div className="bg-gradient-to-br from-green-500 to-green-600 p-3 sm:p-4 rounded-2xl shadow-xl group-hover:scale-110 transition-transform flex-shrink-0">
+                    <Award className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-xl mb-3 text-green-400">🏆 International Certification</h4>
-                    <p className="text-gray-300 leading-relaxed">
+                    <h4 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3 text-green-400">🏆 International Certification</h4>
+                    <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
                       Earn internationally recognized certificates that open doors to global opportunities
                     </p>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-6 group">
-                  <div className="bg-gradient-to-br from-purple-500 to-purple-600 p-4 rounded-2xl shadow-xl group-hover:scale-110 transition-transform">
-                    <Users className="w-8 h-8 text-white" />
+                  <div className="bg-gradient-to-br from-purple-500 to-purple-600 p-3 sm:p-4 rounded-2xl shadow-xl group-hover:scale-110 transition-transform flex-shrink-0">
+                    <Users className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-xl mb-3 text-purple-400">💼 Job Placement</h4>
-                    <p className="text-gray-300 leading-relaxed">
+                    <h4 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3 text-purple-400">💼 Job Placement</h4>
+                    <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
                       95% job placement rate with our extensive network of partner cafés and restaurants
                     </p>
                   </div>

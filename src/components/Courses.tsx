@@ -90,15 +90,15 @@ const Courses = () => {
   ];
 
   return (
-    <section id="courses" className="py-20 bg-gradient-to-br from-slate-50 via-amber-50 to-slate-100">
+    <section id="courses" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-slate-50 via-amber-50 to-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Enhanced section header */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-12 sm:mb-16 lg:mb-20">
           <div className="inline-flex items-center bg-gradient-to-r from-amber-500 to-amber-600 text-white px-8 py-3 rounded-full font-bold text-lg mb-6 shadow-xl">
             <Coffee className="w-6 h-6 mr-2 animate-spin-slow" />
             Course Catalog
           </div>
-          <h2 className="text-5xl md:text-6xl font-black text-slate-800 mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-slate-800 mb-4 sm:mb-6 px-4 sm:px-0">
             <span className="bg-gradient-to-r from-slate-800 to-amber-600 bg-clip-text text-transparent">
               Choose Your Coffee
             </span>
@@ -107,25 +107,25 @@ const Courses = () => {
               Journey ☕
             </span>
           </h2>
-          <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-4 sm:px-0">
             🚀 Discover our comprehensive training programs designed to transform you into a 
             <span className="text-amber-600 font-bold"> coffee professional</span>
           </p>
         </div>
 
         {/* Course catalog grid */}
-        <div className="grid lg:grid-cols-2 gap-8 mb-16">
+        <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16">
           {courses.map((course, index) => (
-            <div key={course.id} className="group relative bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-4 border border-amber-100">
+            <div key={course.id} className="group relative bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2 sm:hover:-translate-y-4 border border-amber-100 mx-4 sm:mx-0">
               {/* Course badge */}
               <div className="absolute top-4 left-4 z-10">
-                <span className="bg-gradient-to-r from-amber-500 to-amber-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
+                <span className="bg-gradient-to-r from-amber-500 to-amber-600 text-white px-3 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-bold shadow-lg">
                   {course.badge}
                 </span>
               </div>
 
               {/* Course image */}
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-48 sm:h-56 lg:h-64 overflow-hidden">
                 <img 
                   src={course.image} 
                   alt={course.title}
@@ -135,11 +135,11 @@ const Courses = () => {
                 
                 {/* Floating stats */}
                 <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-2xl p-3 shadow-lg">
-                  <div className="flex items-center space-x-2 text-sm">
+                  <div className="flex items-center space-x-1 sm:space-x-2 text-xs sm:text-sm">
                     <Star className="w-4 h-4 text-yellow-500 fill-current" />
                     <span className="font-bold text-slate-800">{course.rating}</span>
                   </div>
-                  <div className="flex items-center space-x-2 text-sm mt-1">
+                  <div className="flex items-center space-x-1 sm:space-x-2 text-xs sm:text-sm mt-1">
                     <Users className="w-4 h-4 text-amber-600" />
                     <span className="font-semibold text-slate-700">{course.students}+</span>
                   </div>
@@ -147,12 +147,12 @@ const Courses = () => {
               </div>
 
               {/* Course content */}
-              <div className="p-8">
+              <div className="p-6 sm:p-8">
                 <div className="flex items-center justify-between mb-4">
-                  <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-semibold">
+                  <span className="bg-amber-100 text-amber-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-semibold">
                     {course.level}
                   </span>
-                  <div className="flex items-center space-x-4 text-sm text-gray-600">
+                  <div className="flex items-center space-x-2 sm:space-x-4 text-xs sm:text-sm text-gray-600">
                     <div className="flex items-center space-x-1">
                       <Clock className="w-4 h-4" />
                       <span>{course.duration}</span>
@@ -160,30 +160,30 @@ const Courses = () => {
                   </div>
                 </div>
 
-                <h3 className="text-2xl font-bold text-slate-800 mb-2 group-hover:text-amber-600 transition-colors">
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-2 group-hover:text-amber-600 transition-colors">
                   {course.title}
                 </h3>
-                <p className="text-amber-600 font-semibold mb-6">{course.subtitle}</p>
+                <p className="text-amber-600 font-semibold mb-4 sm:mb-6 text-sm sm:text-base">{course.subtitle}</p>
 
                 {/* Course highlights */}
-                <div className="space-y-3 mb-8">
+                <div className="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
                   {course.highlights.map((highlight, idx) => (
                     <div key={idx} className="flex items-center space-x-3">
-                      <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                      <span className="text-gray-700 font-medium">{highlight}</span>
+                      <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 flex-shrink-0" />
+                      <span className="text-gray-700 font-medium text-sm sm:text-base">{highlight}</span>
                     </div>
                   ))}
                 </div>
 
                 {/* Price and CTA */}
-                <div className="flex items-center justify-between">
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
                   <div>
-                    <div className="text-3xl font-black text-slate-800">{course.price}</div>
-                    <div className="text-sm text-gray-500">Complete Package</div>
+                    <div className="text-2xl sm:text-3xl font-black text-slate-800 text-center sm:text-left">{course.price}</div>
+                    <div className="text-xs sm:text-sm text-gray-500 text-center sm:text-left">Complete Package</div>
                   </div>
-                  <button className={`bg-gradient-to-r ${course.color} text-white px-8 py-4 rounded-2xl font-bold hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center space-x-2`}>
+                  <button className={`bg-gradient-to-r ${course.color} text-white px-6 sm:px-8 py-3 sm:py-4 rounded-2xl font-bold hover:shadow-xl transform active:scale-95 sm:hover:scale-105 transition-all duration-300 flex items-center space-x-2 touch-manipulation w-full sm:w-auto justify-center`}>
                     <span>Enroll Now</span>
-                    <Zap className="w-5 h-5" />
+                    <Zap className="w-4 h-4 sm:w-5 sm:h-5" />
                   </button>
                 </div>
               </div>

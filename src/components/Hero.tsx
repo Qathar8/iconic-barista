@@ -3,7 +3,7 @@ import { Coffee, Award, Users, Clock, Star, ArrowRight } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen bg-gradient-to-br from-slate-900 via-amber-900 to-slate-800 text-white overflow-hidden">
+    <section id="home" className="relative min-h-screen bg-gradient-to-br from-slate-900 via-amber-900 to-slate-800 text-white overflow-hidden pt-16 md:pt-0">
       {/* Animated background elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-32 h-32 bg-amber-400/10 rounded-full blur-xl animate-pulse"></div>
@@ -24,25 +24,25 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16 lg:py-32">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left content */}
-          <div className="text-center lg:text-left space-y-8">
+          <div className="text-center lg:text-left space-y-6 sm:space-y-8">
             <div className="flex items-center justify-center lg:justify-start mb-6">
               <div className="bg-gradient-to-r from-amber-400 to-amber-600 p-4 rounded-full shadow-2xl animate-pulse">
-                <Coffee className="w-12 h-12 text-white" />
+                <Coffee className="w-8 h-8 sm:w-12 sm:h-12 text-white" />
               </div>
-              <div className="ml-4 text-amber-400 font-bold text-xl">Professional Training</div>
+              <div className="ml-4 text-amber-400 font-bold text-lg sm:text-xl">Professional Training</div>
             </div>
             
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-4 sm:mb-6 leading-tight">
               <span className="bg-gradient-to-r from-white to-amber-200 bg-clip-text text-transparent">
                 Professional
               </span>
               <span className="block bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 bg-clip-text text-transparent animate-pulse">
                 Barista Training
               </span>
-              <span className="block text-3xl md:text-4xl lg:text-5xl text-amber-300 font-semibold mt-4">
+              <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-amber-300 font-semibold mt-2 sm:mt-4">
                 in Nairobi
               </span>
             </h1>
@@ -53,18 +53,18 @@ const Hero = () => {
               </p>
             </div>
             
-            <p className="text-xl text-gray-200 mb-10 max-w-2xl leading-relaxed">
+            <p className="text-base sm:text-lg lg:text-xl text-gray-200 mb-6 sm:mb-8 lg:mb-10 max-w-2xl leading-relaxed px-4 sm:px-0">
               🚀 Transform your passion for coffee into a <span className="text-amber-400 font-semibold">professional career</span>. 
               Join Kenya's most prestigious barista training institute and master the art of coffee making, 
               stunning latte art, and exceptional customer service.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
-              <button className="group bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white px-10 py-5 rounded-2xl font-bold text-xl transition-all transform hover:scale-110 shadow-2xl hover:shadow-amber-500/50 flex items-center justify-center space-x-3">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start px-4 sm:px-0">
+              <button className="group bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white px-6 sm:px-8 lg:px-10 py-4 sm:py-5 rounded-2xl font-bold text-lg sm:text-xl transition-all transform active:scale-95 sm:hover:scale-110 shadow-2xl hover:shadow-amber-500/50 flex items-center justify-center space-x-3 touch-manipulation">
                 <span>🎯 Enroll Now</span>
-                <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
+                <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-2 transition-transform" />
               </button>
-              <button className="border-3 border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-slate-900 px-10 py-5 rounded-2xl font-bold text-xl transition-all transform hover:scale-105 shadow-xl">
+              <button className="border-2 sm:border-3 border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-slate-900 px-6 sm:px-8 lg:px-10 py-4 sm:py-5 rounded-2xl font-bold text-lg sm:text-xl transition-all transform active:scale-95 sm:hover:scale-105 shadow-xl touch-manipulation">
                 📚 Learn More
               </button>
             </div>
@@ -72,50 +72,50 @@ const Hero = () => {
 
           {/* Right content - Enhanced course highlights */}
           <div className="relative">
-            <div className="bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-xl rounded-3xl p-8 border border-amber-400/30 shadow-2xl">
+            <div className="bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-xl rounded-3xl p-6 sm:p-8 border border-amber-400/30 shadow-2xl mx-4 sm:mx-0">
               <div className="absolute -top-4 -right-4 bg-gradient-to-r from-amber-400 to-amber-600 text-white px-6 py-2 rounded-full font-bold text-sm animate-pulse">
                 🔥 HOT DEAL!
               </div>
               
-              <h3 className="text-3xl font-bold mb-8 text-center bg-gradient-to-r from-amber-400 to-white bg-clip-text text-transparent">
+              <h3 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-center bg-gradient-to-r from-amber-400 to-white bg-clip-text text-transparent">
                 ☕ Course Highlights
               </h3>
               
-              <div className="grid grid-cols-2 gap-6 mb-8">
-                <div className="text-center bg-gradient-to-br from-amber-500/20 to-amber-600/10 rounded-2xl p-6 border border-amber-400/20">
-                  <Clock className="w-10 h-10 text-amber-400 mx-auto mb-3 animate-spin-slow" />
-                  <div className="text-lg font-bold text-white">Duration</div>
-                  <div className="text-2xl font-black text-amber-400">1 Month</div>
-                  <div className="text-sm text-amber-200">Intensive</div>
+              <div className="grid grid-cols-2 gap-3 sm:gap-6 mb-6 sm:mb-8">
+                <div className="text-center bg-gradient-to-br from-amber-500/20 to-amber-600/10 rounded-2xl p-4 sm:p-6 border border-amber-400/20">
+                  <Clock className="w-8 h-8 sm:w-10 sm:h-10 text-amber-400 mx-auto mb-2 sm:mb-3 animate-spin-slow" />
+                  <div className="text-sm sm:text-lg font-bold text-white">Duration</div>
+                  <div className="text-lg sm:text-2xl font-black text-amber-400">1 Month</div>
+                  <div className="text-xs sm:text-sm text-amber-200">Intensive</div>
                 </div>
                 
-                <div className="text-center bg-gradient-to-br from-amber-500/20 to-amber-600/10 rounded-2xl p-6 border border-amber-400/20">
-                  <Award className="w-10 h-10 text-amber-400 mx-auto mb-3 animate-bounce" />
-                  <div className="text-lg font-bold text-white">Investment</div>
-                  <div className="text-2xl font-black text-amber-400">KES 34,000</div>
-                  <div className="text-sm text-amber-200">All Inclusive</div>
+                <div className="text-center bg-gradient-to-br from-amber-500/20 to-amber-600/10 rounded-2xl p-4 sm:p-6 border border-amber-400/20">
+                  <Award className="w-8 h-8 sm:w-10 sm:h-10 text-amber-400 mx-auto mb-2 sm:mb-3 animate-bounce" />
+                  <div className="text-sm sm:text-lg font-bold text-white">Investment</div>
+                  <div className="text-lg sm:text-2xl font-black text-amber-400">KES 34,000</div>
+                  <div className="text-xs sm:text-sm text-amber-200">All Inclusive</div>
                 </div>
                 
-                <div className="text-center bg-gradient-to-br from-amber-500/20 to-amber-600/10 rounded-2xl p-6 border border-amber-400/20">
-                  <Users className="w-10 h-10 text-amber-400 mx-auto mb-3 animate-pulse" />
-                  <div className="text-lg font-bold text-white">Intake</div>
-                  <div className="text-2xl font-black text-amber-400">Monthly</div>
-                  <div className="text-sm text-amber-200">Limited Seats</div>
+                <div className="text-center bg-gradient-to-br from-amber-500/20 to-amber-600/10 rounded-2xl p-4 sm:p-6 border border-amber-400/20">
+                  <Users className="w-8 h-8 sm:w-10 sm:h-10 text-amber-400 mx-auto mb-2 sm:mb-3 animate-pulse" />
+                  <div className="text-sm sm:text-lg font-bold text-white">Intake</div>
+                  <div className="text-lg sm:text-2xl font-black text-amber-400">Monthly</div>
+                  <div className="text-xs sm:text-sm text-amber-200">Limited Seats</div>
                 </div>
                 
-                <div className="text-center bg-gradient-to-br from-amber-500/20 to-amber-600/10 rounded-2xl p-6 border border-amber-400/20">
-                  <Star className="w-10 h-10 text-amber-400 mx-auto mb-3 animate-spin" />
-                  <div className="text-lg font-bold text-white">Certification</div>
-                  <div className="text-2xl font-black text-amber-400">Professional</div>
-                  <div className="text-sm text-amber-200">Recognized</div>
+                <div className="text-center bg-gradient-to-br from-amber-500/20 to-amber-600/10 rounded-2xl p-4 sm:p-6 border border-amber-400/20">
+                  <Star className="w-8 h-8 sm:w-10 sm:h-10 text-amber-400 mx-auto mb-2 sm:mb-3 animate-spin" />
+                  <div className="text-sm sm:text-lg font-bold text-white">Certification</div>
+                  <div className="text-lg sm:text-2xl font-black text-amber-400">Professional</div>
+                  <div className="text-xs sm:text-sm text-amber-200">Recognized</div>
                 </div>
               </div>
               
-              <div className="bg-gradient-to-r from-amber-600/30 to-amber-500/20 rounded-2xl p-6 border border-amber-400/40 text-center">
-                <p className="text-amber-200 font-bold text-lg mb-2">
+              <div className="bg-gradient-to-r from-amber-600/30 to-amber-500/20 rounded-2xl p-4 sm:p-6 border border-amber-400/40 text-center">
+                <p className="text-amber-200 font-bold text-base sm:text-lg mb-2">
                   🎯 Next Intake: January 2025
                 </p>
-                <p className="text-white font-semibold">
+                <p className="text-white font-semibold text-sm sm:text-base">
                   ⚡ Only 8 Spots Left!
                 </p>
               </div>
